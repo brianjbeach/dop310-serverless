@@ -28,3 +28,8 @@ Actions:
             entrypoint: /bin/sh
     Compute:
       Type: EC2
+    Environment:
+      Connections:
+        - Role: CodeCatalystWorkflowDevelopmentRole
+          Name: "208362219457"
+      Name: development
